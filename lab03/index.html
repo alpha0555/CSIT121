@@ -1,43 +1,170 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Web Standards - Labs 1 & 2</title> 
-    <link rel="stylesheet" href="styles.css" />
- </head>
+    <title>Learning Web Standards - Labs 1, 2 & 3</title>
+    <style>
+        /* Embedded CSS styles for Lab 03 */
+        
+        /* Body styling */
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        /* Heading styling */
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        
+        h2 {
+            color: #2980b9;
+            text-align: center;
+            font-style: italic;
+            margin-top: 0;
+        }
+        
+        h3 {
+            color: #16a085;
+            border-left: 4px solid #16a085;
+            padding-left: 10px;
+        }
+        
+        /* Paragraph styling */
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        /* Link styling */
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            color: #c0392b;
+            background-color: #fff9e6;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        /* ID selector */
+        #main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Class selector */
+        .meta {
+            font-style: italic;
+            color: #7f8c8d;
+            text-align: center;
+            border-top: 1px dashed #bdc3c7;
+            border-bottom: 1px dashed #bdc3c7;
+            padding: 10px 0;
+        }
+        
+        .reflection {
+            background-color: #ecf0f1;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 5px solid #3498db;
+        }
+        
+        .reflection-title {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #bdc3c7;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        ol, ul {
+            margin-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
 <body>
-    <header>
-        <h1>Learning Web Standards</h1>
-        <h2>Labs 1 & 2</h2>
-    </header>
-    
-    <main>
-        <article>
-            <p class="meta">Published on August 6, 2024 by The Professor</p>
-            
-            <p>My first webpage! At first, the process seemed daunting, with so many tags and structures to remember, but breaking it down step by step made it manageable. Learning how to properly structure an HTML helped me understand how webpages are built and displayed.</p>
-            
-            <h3>What I Learned</h3>
-            
-            <ol>
-                <li>a thing I learned</li>
-                <li>another thing I learned</li>
-                <li>so many things!</li>
-            </ol>
-            
-            <p>Learning about x, y, and z was another exciting step. I learned a lot from:</p>
-            
-            <ul>
-                <li><a href="https://example.com/page1">this page</a></li>
-                <li><a href="https://example.com/page2">and this page</a></li>
-            </ul>
-        </article>
-    </main>
-    
-    <footer>
-        <p>© 2024 The Professor. All rights reserved.</p>
-    </footer>
+    <div id="main-content">
+        <header>
+            <h1>Learning Web Standards</h1>
+            <h2>Labs 1, 2 & 3</h2>
+        </header>
+        
+        <main>
+            <article>
+                <p class="meta">Published on August 6, 2024 by The Professor | Updated September 22, 2024</p>
+                
+                <div class="reflection">
+                    <h3 class="reflection-title">Lab 02 Reflection: HTML Fundamentals</h3>
+                    <p>My first webpage! At first, the process seemed daunting, with so many tags and structures to remember, but breaking it down step by step made it manageable. Learning how to properly structure an HTML document helped me understand how webpages are built and displayed. I discovered the importance of semantic HTML elements like &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt; in creating well-organized content.</p>
+                    
+                    <h3>What I Learned in Lab 02</h3>
+                    
+                    <ol>
+                        <li>The basic structure of an HTML document with proper DOCTYPE, html, head, and body elements</li>
+                        <li>How to use semantic HTML tags to create meaningful page structure</li>
+                        <li>The difference between ordered and unordered lists and when to use each</li>
+                        <li>How to create hyperlinks and understand absolute vs. relative paths</li>
+                    </ol>
+                    
+                    <p>Learning about proper document structure, semantic elements, and validation was particularly valuable. I learned a lot from:</p>
+                    
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs HTML Guide</a></li>
+                        <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a></li>
+                    </ul>
+                </div>
+                
+                <div class="reflection">
+                    <h3 class="reflection-title">Lab 03 Reflection: Introduction to CSS</h3>
+                    <p>Lab 03 introduced me to the power of CSS in transforming the visual presentation of web content. I was amazed by how much control CSS provides over every aspect of a webpage's appearance. Learning about different types of selectors (element, class, and ID) helped me understand how to target specific parts of my HTML for styling. The concept of separation of content (HTML) and presentation (CSS) is becoming clearer, though I'm still working on mastering the cascade and specificity rules.</p>
+                    
+                    <p>I particularly enjoyed experimenting with color schemes, typography, and spacing to create a more visually appealing blog page. Understanding the box model was a breakthrough moment - it helped me comprehend how margins, padding, and borders work together to create layout. I'm excited to continue exploring more CSS properties and responsive design techniques to create websites that work well on different devices.</p>
+                    
+                    <h3>What I Learned in Lab 03</h3>
+                    
+                    <ol>
+                        <li>How to use embedded CSS styling within an HTML document</li>
+                        <li>The difference between element, class, and ID selectors</li>
+                        <li>How to style text, colors, backgrounds, and borders</li>
+                        <li>The basics of the CSS box model (margin, padding, border)</li>
+                        <li>How to create simple layouts and center content</li>
+                    </ol>
+                </div>
+            </article>
+        </main>
+        
+        <footer>
+            <p>© 2024 The Professor. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
