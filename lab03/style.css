@@ -1,3 +1,93 @@
-h1 {
-  color: red;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Journey - Lab 03</title>
+    <style>
+        /* Embedded CSS styles */
+        
+        /* Body styling */
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        /* Heading styling */
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+        }
+        
+        /* Paragraph styling */
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        /* Link styling */
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            color: #c0392b;
+        }
+        
+        /* ID selector */
+        #main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* Class selector */
+        .reflection {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        
+        .date {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-content">
+        <h1>My Web Development Learning Journey</h1>
+        
+        <h2>Reflection #1: HTML Fundamentals (Lab 02)</h2>
+        <div class="reflection">
+            <p class="date">Posted: September 15, 2023</p>
+            <p>In Lab 02, I learned the foundational structure of HTML documents and how to properly organize content using semantic elements. Creating my first blog page helped me understand the importance of proper nesting and the relationship between different HTML elements. I particularly enjoyed experimenting with different heading levels and paragraph structures to create a logical flow of information. The validation process taught me to pay close attention to syntax details that I might otherwise overlook. Overall, this lab gave me confidence in building the basic structure of web pages.</p>
+        </div>
+        
+        <h2>Reflection #2: Introduction to CSS (Lab 03)</h2>
+        <div class="reflection">
+            <p class="date">Posted: September 22, 2023</p>
+            <p>Lab 03 introduced me to CSS and how it transforms the visual presentation of HTML content. I was amazed by how much control CSS provides over the appearance of web pages. Learning about different selectors (element, class, and ID) helped me understand how to target specific parts of my HTML for styling. The concept of separation of content (HTML) and presentation (CSS) is becoming clearer, though I'm still working on mastering the cascade and specificity rules. I'm excited to continue exploring more CSS properties and layouts to create more visually appealing websites.</p>
+        </div>
+        
+        <p>Check out the <a href="style.css">external CSS file</a> for additional styling.</p>
+    </div>
+</body>
+</html>
